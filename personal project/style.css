@@ -1,0 +1,38 @@
+:root {
+  --black-color: black;
+  --white-color: white;
+  --pink-color: pink;
+  --transition: all 1s ease;
+  --font-monosspace: "Courier New", Courier, monospace;
+}
+h1 {
+  font-family: var(--font-monosspace);
+}
+p {
+  font-family: var(--font-monospace);
+  color: var(--pink-color);
+  font-size: larger;
+}
+span {
+  transition: var(--transition);
+}
+span:hover {
+  color: var(--pink-color);
+  cursor: pointer;
+  animation-name: move-top-left;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+@media screen and (min-width: 500px) {
+  body {
+    background: yellow;
+  }
+}
+@keyframes move-top-left {
+  from {
+    transform: translate(-10px, -10px);
+  }
+  to {
+    transform: translate(20px, 20px);
+  }
+}
