@@ -14,14 +14,14 @@ p {
   font-size: larger;
 }
 span {
+  padding: 20px;
+  display: inline-block;
   transition: var(--transition);
 }
 span:hover {
   color: var(--pink-color);
   cursor: pointer;
-  animation-name: move-top-left;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
+  animation: move-top-left 2s infinite alternate ease-in-out;
 }
 @media screen and (min-width: 500px) {
   body {
